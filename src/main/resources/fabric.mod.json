@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "blowdartmod",
+  "version": "${version}",
+
+  "name": "Blow Dart Mod",
+  "description": "Blow Darts to incapcitate mobs to transport them around your world!",
+  "authors": [
+    "WhatsPoppinP!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.whatspoppinp.blowdartmod.BlowDartMod"
+    ],
+    "client": [
+      "net.whatspoppinp.blowdartmod.BlowDartModClient"
+    ]
+  },
+  "mixins": [
+    "blowdartmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
